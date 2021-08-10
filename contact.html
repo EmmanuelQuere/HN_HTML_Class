@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=960px, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+
+  <div>
+    <ul class="navBar">
+      <li><a href="index.html">CoffeePlace</a></li>
+      <li><a href="about.html">A propos</a></li>
+      <li><a href="history.html">Histoire</a></li>
+      <li><a href="photo_gallery.html">Galerie</a></li>
+      <li><a href="contact.html">Nous contacter</a></li>
+    </ul>
+  </div> 
+
+  <h1>Nous contacter</h1>
+
+  <div>
+    <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
+      <div>
+        <label for="lastname">Votre nom</label>
+        <input name="lastname" id="lastname" type="text" placeholder="Nom...">
+      </div>
+      <div>
+        <label for="firstname">Votre prénom</label>
+        <input name="firstname" id="firstname" type="text" placeholder="Prénom...">
+      </div>
+      <div>
+        <label for="email">Votre email</label>
+        <input name="email" type="email" id="email" placeholder="E-mail...">
+      </div>
+      <div>
+        <label for="country">Votre pays</label>
+        <select name="country" id="country" >
+          <option value="france">France</option>
+          <option value="belgique">Belgique</option>
+          <option value="Suisse">Suisse</option>
+        </select>
+      </div>
+      <div>
+        <label for="request">Votre demande</label>
+        <textarea cols="66" rows="10" name="request" id="request" value="request"></textarea>
+      </div>
+
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+  
+</body>
+</html>
