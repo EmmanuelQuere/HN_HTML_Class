@@ -4,52 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=960px, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
   <title>Document</title>
 </head>
-<body>
+<body style="background-color: burlywood;">
 
-  <div>
-    <ul class="navBar">
-      <li><a href="index.html">CoffeePlace</a></li>
-      <li><a href="about.html">A propos</a></li>
-      <li><a href="history.html">Histoire</a></li>
-      <li><a href="photo_gallery.html">Galerie</a></li>
-      <li><a href="contact.html">Nous contacter</a></li>
-    </ul>
-  </div> 
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: beige">
+    <div class="container-fluid" style="background-color: beige">
+      <a class="navbar-brand" href="index.html" style="background-color: beige">CoffeePlace</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">Histoire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photo_gallery.html">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Nous contacter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <h1>Nous contacter</h1>
 
   <div>
     <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
-      <div>
-        <label for="lastname">Votre nom</label>
-        <input name="lastname" id="lastname" type="text" placeholder="Nom...">
+      <div class="mb-3 p-2">
+        <label for="lastname" class="form-label">Votre nom</label>
+        <input name="lastname" class="form-control" id="lastname" type="text" placeholder="Nom...">
       </div>
-      <div>
-        <label for="firstname">Votre prénom</label>
-        <input name="firstname" id="firstname" type="text" placeholder="Prénom...">
+      <div class="mb-3 p-2">
+        <label for="firstname" class="form-label">Votre prénom</label>
+        <input name="firstname" class="form-control" id="firstname" type="text" placeholder="Prénom...">
       </div>
-      <div>
-        <label for="email">Votre email</label>
-        <input name="email" type="email" id="email" placeholder="E-mail...">
+      <div class="mb-3 p-2">
+        <label for="email" class="form-label">Votre email</label>
+        <input name="email" class="form-control" type="email" id="email" placeholder="E-mail...">
       </div>
-      <div>
-        <label for="country">Votre pays</label>
-        <select name="country" id="country" >
+      <div class="mb-3 p-2">
+        <label for="country" class="form-label">Votre pays</label>
+        <select name="country" id="country" class="form-control">
           <option value="france">France</option>
           <option value="belgique">Belgique</option>
           <option value="Suisse">Suisse</option>
         </select>
       </div>
-      <div>
-        <label for="request">Votre demande</label>
-        <textarea cols="66" rows="10" name="request" id="request" value="request"></textarea>
+      <div class="mb-3 p-2">
+        <label for="request" class="form-label">Votre demande</label>
+        <textarea cols="66" rows="10" name="request" id="request" value="request" class="form-control"></textarea>
       </div>
 
-      <input type="submit" value="Envoyer">
+      <button type="submit" class="btn btn-primary mb-3 p-2">Envoyer</button>
     </form>
   </div>
   
